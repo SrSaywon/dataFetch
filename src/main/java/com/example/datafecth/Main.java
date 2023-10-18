@@ -17,13 +17,12 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
 
-            HttpResponse<String> response;
+        HttpResponse<String> response;
 
-//        serieByYear
-//            for (int year = 1960; year <= 2021; year++) {
-//                // int year = 1960;
+//        movieByRatings
+
 //                HttpRequest request = HttpRequest.newBuilder()
-//                        .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/series/byYear/" + year + "/"))
+//                        .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/movie/order/byRating/"))
 //                        .header("X-RapidAPI-Key", "5126e12441msh52cdbabc17366c2p1183f9jsn5e7e3ba6dcb6")
 //                        .header("X-RapidAPI-Host", "moviesminidatabase.p.rapidapi.com")
 //                        .method("GET", HttpRequest.BodyPublishers.noBody())
@@ -36,11 +35,10 @@ public class Main {
         //return response.body();
 
 
-//        movieByYear
-//        for (int year = 1960; year <= 2021; year++) {
-//            // int year = 1960;
+//        seriesByRatings
+
 //            HttpRequest request = HttpRequest.newBuilder()
-//                    .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/movie/byYear/" + year + "/"))
+//                    .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/series/order/byRating/"))
 //                    .header("X-RapidAPI-Key", "5126e12441msh52cdbabc17366c2p1183f9jsn5e7e3ba6dcb6")
 //                    .header("X-RapidAPI-Host", "moviesminidatabase.p.rapidapi.com")
 //                    .method("GET", HttpRequest.BodyPublishers.noBody())
@@ -54,7 +52,7 @@ public class Main {
 //        movieCastById
 //        "https://moviesminidatabase.p.rapidapi.com/movie/id/%7Bmovie_id%7D/cast/"
 
-//        List<String> imdbId;
+        List<String> imdbId;
         for (int i = 0; i < imdbId.size(); i++) {
             String ids = imdbId.get(i);
             HttpRequest request = HttpRequest.newBuilder()
@@ -130,7 +128,7 @@ public class Main {
 //        List<String> imdbId;
 //        for (int i = 0; i < imdbId.size(); i++) {
 //            String ids = imdbId.get(i);
-//            for (int nbSeason = 1; nbSeason <= 40; nbSeason++) {
+//            for (int nbSeason = 1; nbSeason <= 5; nbSeason++) {
 //                HttpRequest request = HttpRequest.newBuilder()
 //                        .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/movie/id/" + ids +"/" + nbSeason + "/episodes/"))
 //                        .header("X-RapidAPI-Key", "5126e12441msh52cdbabc17366c2p1183f9jsn5e7e3ba6dcb6")
@@ -142,6 +140,25 @@ public class Main {
 //            }
 //        }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        List<String> color = Arrays.asList("Blue", "Red", "Green");
 //        for (int i = 0; i < color.size(); i++) {
 //            System.out.println(color.get(i));
@@ -150,5 +167,17 @@ public class Main {
 //            }
 //        }
 
+
+//            for (int nbSeason = 1; nbSeason <= 5; nbSeason++) {
+//                HttpRequest request = HttpRequest.newBuilder()
+//                        .uri(URI.create("https://moviesminidatabase.p.rapidapi.com/series/id/" + "tt0098936" +"/season/" + nbSeason + "/episodes/"))
+//                        .header("X-RapidAPI-Key", "5126e12441msh52cdbabc17366c2p1183f9jsn5e7e3ba6dcb6")
+//                        .header("X-RapidAPI-Host", "moviesminidatabase.p.rapidapi.com")
+//                        .method("GET", HttpRequest.BodyPublishers.noBody())
+//                        .build();
+//                response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+//                System.out.println(response.body());
+//            }
     }
 }
+
