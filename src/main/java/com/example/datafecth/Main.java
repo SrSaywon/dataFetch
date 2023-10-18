@@ -17,9 +17,6 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
 
-
-
-
             HttpResponse<String> response;
 
 //        serieByYear
@@ -36,7 +33,7 @@ public class Main {
 //
 //            }
 
-            //return response.body();
+        //return response.body();
 
 
 //        movieByYear
@@ -57,7 +54,7 @@ public class Main {
 //        movieCastById
 //        "https://moviesminidatabase.p.rapidapi.com/movie/id/%7Bmovie_id%7D/cast/"
 
-        List<String> imdbId;
+//        List<String> imdbId;
         for (int i = 0; i < imdbId.size(); i++) {
             String ids = imdbId.get(i);
             HttpRequest request = HttpRequest.newBuilder()
@@ -145,6 +142,13 @@ public class Main {
 //            }
 //        }
 
+//        List<String> color = Arrays.asList("Blue", "Red", "Green");
+//        for (int i = 0; i < color.size(); i++) {
+//            System.out.println(color.get(i));
+//            for (int nbSeason = 1; nbSeason <= 10; nbSeason++) {
+//                System.out.println(" numero :" + nbSeason);
+//            }
+//        }
 
     }
 }
